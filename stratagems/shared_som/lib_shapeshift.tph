@@ -380,7 +380,7 @@ BEGIN
 		LPF ADD_SPELL_EFFECT INT_VAR opcode=146 target=1 timing=1 parameter2=1 STR_VAR resource="%spl_shapeshift_remove_abilities%" END
 		// payload
 		PATCH_IF FILE_EXISTS_IN_GAME "spinhumr.spl" BEGIN
-			LPF ADD_SPELL_EFFECT INT_VAR opcode=111 target=1 timing=4 duration=0 STR_VAR resource="%weapon%" END
+			LPF ADD_SPELL_EFFECT INT_VAR opcode=111 target=1 parameter1=1 timing=4 duration=0 STR_VAR resource="%weapon%" END
 		END ELSE BEGIN
 			LPF ADD_SPELL_EFFECT INT_VAR opcode=111 target=1 duration timing STR_VAR resource="%weapon%" END
 		END
